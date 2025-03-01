@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="font-family: 'Minecraft', sans-serif;">
+      EnchantedBook
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Encantamientos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <button *ngFor="let libro of encantamientos" (click)="verEncantamiento(libro)">
+    <div class="titulo">
+      <h4>{{ libro.titulo }}</h4>
+      <p>Nivel máximo: {{ libro.nivMax }}</p>
+    </div>
+    <div>
+      <img *ngFor="let img of libro.objetos" [src]="img">
+    </div>
+  </button>
+</ion-content>

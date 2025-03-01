@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/assets/fonts/Minecraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ion-toolbar {
+    --background: #313234;
+    --color: white;
+}
+
+ion-content {
+    --background: #48494b;
+    --color: white;
+}
+
+button {
+    font-family: 'Minecraft', sans-serif;
+
+    text-align: left;
+
+    background-color: #d0d1d5;
+    color: black;
+    
+    width: 96.5%;
+    padding: 0.75rem;
+    padding-top: 0%;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: #3b8526;
+    color: white;
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    height: 2rem;
+    margin-right: 0.5rem;
+}

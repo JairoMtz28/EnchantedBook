@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/encantamientos" text="<" icon="none" style="font-family: 'Minecraft', sans-serif;"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-family: 'Minecraft', sans-serif;">
+      EnchantedBook
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ libro?.titulo }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img src="/assets/images/background.png" alt="background.png" class="background">
+  <div class="darkback"></div>
+
+  <section *ngIf="libro">
+    <p>{{ libro.titulo }}</p>
+    <br>
+    <br>
+    
+
+    <h6>{{ libro.efecto }}</h6>
+    <br>
+    <br>
+    <br>
+
+    Peso del encantamiento: {{ libro.peso }}
+    <br>
+    <br>
+    <br>
+
+    Nivel máximo: {{ libro.nivMax }}
+    <br>
+    <br>
+    <br>
+
+    Disponible en: {{ libro.obtencion }}
+    <br>
+    <br>
+    <br>
+
+    <div>
+      Objetos que se pueden encantar con {{ libro.titulo }}:
+      <br>
+      <br>
+      <img *ngFor="let img of libro.objetos" [src]="img" />
+    </div>
+  </section>
+</ion-content>

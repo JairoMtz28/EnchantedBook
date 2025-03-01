@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/assets/fonts/Minecraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ion-tab-bar {
+    --background: #313234;
+}
+
+ion-tab-button {
+    --color: white;
+    --color-selected: #3b8526;
+}
+  
+img {
+    width: 1.5rem;
+}

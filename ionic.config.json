@@ -1,0 +1,7 @@
+{
+  "name": "EnchantedBook",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
